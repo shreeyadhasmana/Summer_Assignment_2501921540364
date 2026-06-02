@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ques5
+{
+    public static void main(String args[])
+    {
+        Scanner scnr=new Scanner(System.in);
+        System.out.println("enter a number");
+        int n=scnr.nextInt();
+        int sum=0,d;
+        while(n>0)
+        {
+            d=n%10;
+            sum+=d;
+            n=n/10;
+        }
+        System.out.println("sum of digits = "+sum);
+    }
+}

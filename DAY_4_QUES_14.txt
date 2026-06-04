@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class ques14
+{
+    public static void main(String args[])
+    {
+        Scanner scnr=new Scanner(System.in);
+        
+        System.out.print(" enter a number ");
+        int n=scnr.nextInt();
+        int a=0,b=1;
+        int c=a+b;
+        
+        int ans=0;
+        for(int i=1;i<n-1;i++)
+        {
+            ans=c;
+            a=b;
+            b=c;
+            c=a+b;
+        }
+        
+        System.out.print(" nth number is = "+ans);
+    }
+}

@@ -15,4 +15,5 @@ public class ques5
         }
         System.out.println("sum of digits = "+sum);
     }
+    
 }
